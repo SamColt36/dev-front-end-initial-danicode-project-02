@@ -33,4 +33,5 @@ Se você quiser contribuir para este projeto, sinta-se à vontade para abrir uma
 ## Considerações
 
 Este projeto está ativo e segue em produção. Te convido a vir junto comigo commit a commit desenvolver esse projeto. Então, siga-me os bons?!.
+
 ![](https://media.tenor.com/OwBscrP23yEAAAAC/abell46s-chapulin.gif)
