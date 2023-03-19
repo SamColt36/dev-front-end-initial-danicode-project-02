@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Um breve estudo da estilização de formulários">
+    <meta name="keywords" content="HTML, CSS, GITHUB, YOUTUBE, TUTORIAL">
+    <meta name="author" content="SamColt36">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--INÍCIO: BIBLIOTECA DE ICONS-->
+    <script src="https://kit.fontawesome.com/06964a6d86.js" crossorigin="anonymous"></script>
+    <!--FIM: BIBLIOTECA DE ICONS-->
+    <link rel="stylesheet" href="./assets/css/defaults.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <title>Youtube</title>
+    <link rel="icon" type="image/png" href="https://www.youtube.com/s/desktop/00d32223/img/favicon_32x32.png"
+        sizes="32x32" />
+</head>
+
+<body>
+    <nav>
+        <div class="menu-navbar">
+            <!--icone de menu personalizado-->
+            <label for="check" class="menu-icon flex-center">
+                <img src="./assets/img/nav/menu-icon.png" alt="Ícone personalizado do botão de menu" title="menu">
+            </label>
+            <input type="checkbox" name="check" id="check"></input>
+            <a href="https://www.youtube.com" title="Página inicial do Youtube">
+                <img src="./assets/img/nav/youtube-loco-com-nome.png" alt="logo e tipografia do youtube">
+            </a>
+        </div>
+        <div class="search-container">
+            <form action="#">
+                <fieldset>
+                    <input type="text" name="entrada" id="entrada">
+                    <label for="entrada">
+                        <i class="fa-sharp fa-solid fa-keyboard"></i>
+                    </label>
+                </fieldset>
+                <span>
+                    <i class="fa-solid fa-microphone"></i>
+                </span>
+            </form>
+        </div>
+        <div class="notifications">
+            <span>
+                <i class="fa-solid fa-arrow-up"></i>
+            </span>
+            <span>
+                <i class="fa-regular fa-bell"></i>
+            </span>
+            <span>
+                <img src="./assets/img/nav/logo-perfil-account.png" alt="imagem do perfil da conta de email">
+            </span>
+        </div>
+    </nav>
+</body>
+
+</html>

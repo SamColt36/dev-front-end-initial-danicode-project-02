@@ -1,0 +1,72 @@
+nav {
+    height: 10vh;
+    width: 100vw;
+    position: relative;
+    display: grid;
+    grid-template-areas: 'menu-sand search notifications';
+    grid-template-columns: 1fr 4fr 1fr;
+    align-content: center;
+}
+
+nav img {
+    height: 20px;
+}
+
+nav i {
+    color: #fff;
+}
+
+.menu-navbar,
+.notifications {
+    padding: 0 10%;
+}
+
+#check {
+    display: none;
+}
+
+.menu-icon {
+    height: 1em;
+    position: inherit;
+    cursor: pointer;
+    padding: 5%;
+    margin: 0 5%;
+}
+
+.menu-icon img {
+    vertical-align: 1em;
+}
+
+.menu-navbar {
+    grid-area: menu-sand;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: inherit;
+}
+
+.notifications i {
+    padding: 5%;
+    margin: 0 5%;
+    font-size: 1.5em;
+}
+
+.menu-navbar i:hover,
+.menu-navbar ion-icon:hover {
+    background-color: #3a3a3a;
+    border-radius: 50%;
+}
+
+.search-container {
+    grid-area: search;
+}
+
+.notifications {
+    grid-area: notifications;
+    border: 1px solid red;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}

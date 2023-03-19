@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #151515;
+}
+
+a {
+    color: inherit;
+}
+
+.flex-center {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
