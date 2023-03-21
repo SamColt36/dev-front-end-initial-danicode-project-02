@@ -21,13 +21,12 @@
 
 <body>
     <nav>
-        <div class="menu-navbar">
-            <!--icone de menu personalizado-->
+        <div class="menu-navbar flex-center">
             <label for="check" class="menu-icon flex-center">
-                <img src="./assets/img/nav/menu-icon.png" alt="Ícone personalizado do botão de menu" title="menu">
+                <img src="./assets/img/nav/menu-icon.png" alt="Ícone personalizado do botão de menu">
             </label>
-
-            <input type="checkbox" name="check" id="check"></input>
+            <!--INPUT DISPLAY NONE-->
+            <input type="checkbox" name="check" id="check" style="display: none;"></input>
 
             <a href="https://www.youtube.com" title="Página inicial do Youtube" class="flex-center">
                 <img src="./assets/img/nav/youtube-loco-com-nome.png" alt="logo e tipografia do youtube">
@@ -36,7 +35,7 @@
         </div>
 
         <div class="search-container flex-center">
-            <div class="flex-center pesquisa">
+            <div class="label flex-center">
                 <label for="entrada">
                     <input type="text" name="entrada" id="entrada" placeholder="Pesquisar">
                     <figure class="flex-center">
@@ -52,7 +51,7 @@
             </figure>
         </div>
 
-        <div class="notifications">
+        <div class="notifications flex-center">
             <figure href="#" title="Enviar">
                 <img src="./assets/img/nav/upload-icon.png" alt="Botão de upload de arquivos">
             </figure>

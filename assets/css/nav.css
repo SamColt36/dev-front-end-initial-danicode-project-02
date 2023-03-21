@@ -1,143 +1,136 @@
 nav {
-    height: 56px;
     width: 100vw;
+    height: 56px;
     position: relative;
     display: grid;
     grid-template-areas: 'menu-sd search notifications';
-    grid-template-columns: 2fr 5fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
     align-content: center;
     font-family: 'Roboto', sans-serif;
 }
 
-/*APAGAR REGRA CSS*/
-nav img {
-    max-height: 30px;
-}
-
 .menu-navbar {
     grid-area: menu-sd;
-    position: inherit;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 5%;
 }
 
-.menu-navbar a {
-    position: inherit;
-    height: 1.2em;
-    margin: 0 5%;
-}
-
-.menu-navbar label img {
-    height: 40%;
-    margin: 0 auto;
-}
-
-.menu-navbar a img {
-    height: 100%;
-}
-
-.menu-navbar input {
-    display: none;
+.search-container {
+    grid-area: search;
 }
 
 .notifications {
     grid-area: notifications;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+}
+
+nav img {
+    max-height: 20px;
     cursor: pointer;
 }
 
-.notifications figure,
-.menu-navbar label,
-.microphone-icon {
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    position: inherit;
-    position: relative;
+.menu-navbar {
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.notifications figure img,
+.menu-navbar label {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    transition: ease-in .15s;
+}
+
+.menu-navbar label img {
+    height: 15px;
+}
+
+.menu-navbar label:hover {
+    background-color: rgba(43, 43, 43, 1);
+}
+
+/*search-container*/
+.search-container {
+    width: 60%;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.microphone-icon {
+    background-color: rgba(43, 43, 43, 0.418);
+    height: 45px;
+    width: 45px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: ease-in .15s;
+    cursor: pointer;
+}
+
+.microphone-icon:hover {
+    background-color: rgba(43, 43, 43, 1);
+}
+
 .microphone-icon img {
     margin: 0 auto;
 }
 
-.notifications figure:not(.my-account) img,
-.microphone-icon img {
-    height: 45%;
-}
-
-.my-account img {
-    border-radius: 50%;
-}
-
-.notifications figure:hover:not(.my-account),
-.menu-navbar label:hover {
-    background-color: rgb(73, 73, 73);
-    border-radius: 50%;
-}
-
-.notifications figure:nth-child(2) img {
-    height: 50%;
-}
-
-.notifications figure:nth-child(2)::after {
-    content: "9+";
-    color: #fff;
-    background-color: rgb(235, 10, 10);
-    border-radius: 50%;
-    position: absolute;
-    padding: 2px;
-    top: 0;
-    right: 0;
-    font-size: .8em;
-}
-
-.search-container {
-    width: 60%;
-}
-
-.pesquisa {
-    background-color: rgba(49, 49, 49, 0.671);
-    border: 1px solid #363636;
-    width: 90%;
-    border-radius: 60px;
-    position: relative;
-}
-
-.pesquisa label {
-    background-color: #151515;
-    border-right: 1px solid #363636;
-    width: 80%;
+.label {
+    border: 1px solid rgba(112, 112, 112, 0.534);
+    overflow: hidden;
+    width: calc(100% - 55px);
+    border-radius: 50px;
     height: 45px;
 }
 
-.pesquisa figure {
-    width: 20%;
+.label label {
+    background-color: rgba(128, 128, 0, 0);
+    padding-left: 5%;
+    height: 100%;
+    width: calc(100% - 70px);
 }
 
-.pesquisa figure img {
+.label figure {
+    height: 50px;
+    width: 70px;
+}
+
+.label figure img {
     margin: 0 auto;
 }
 
-.search-icon {
+.label label {
     position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label label input {
+    background-color: rgba(15, 155, 155, 0);
     height: 100%;
-    background-color: rgb(143, 36, 36);
+    width: 100%;
+    font-size: 1em;
+    color: #fff;
 }
 
-.search-icon img {
-    height: 10%;
-    background-color: whitesmoke;
+.label label input::placeholder {
+    color: #ffffff8f;
+    font-family: 'Roboto', sans-serif;
 }
 
-.microphone-icon {
-    background-color: rgba(56, 56, 56, 0.781);
-    border-radius: 50%;
-    margin: 0 20px;
+.label label figure {
+    width: 50px;
+}
+
+.label label figure img {
+    height: 12px;
+    opacity: .5;
+}
+
+.label label figure img:hover {
+    opacity: .8;
+    transition: ease-in .15s;
+}
+
+.search-icon {
+    background-color: rgba(58, 58, 58, 0.5);
+    border-left: 1px solid rgba(112, 112, 112, 0.534);
 }
