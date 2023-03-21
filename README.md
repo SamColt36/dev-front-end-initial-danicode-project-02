@@ -16,8 +16,8 @@ A página da Youtube que eu criei possui os seguintes recursos:
 
 ## Como Acessar o Projeto
 
-Para acessar o projeto, você pode clonar o repositório em seu computador e abrir o arquivo `index.html` em seu navegador. Alternativamente, você pode acessar a página ao vivo neste link*.
->(*)Disponível apenas no fim do projeto.
+Para acessar o projeto, você pode clonar o repositório em seu computador e abrir o arquivo `index.html` em seu navegador. Alternativamente, você pode acessar a página ao vivo neste [link*](https://samcolt36.github.io/dev-front-end-initial-danicode-project-02/).
+>(*)Em processo.
 
 ## Tecnologias Utilizadas
 
