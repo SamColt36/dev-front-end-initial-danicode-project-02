@@ -1,72 +1,143 @@
 nav {
-    height: 10vh;
+    height: 56px;
     width: 100vw;
     position: relative;
     display: grid;
-    grid-template-areas: 'menu-sand search notifications';
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 'menu-sd search notifications';
+    grid-template-columns: 2fr 5fr 1fr;
     align-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
+/*APAGAR REGRA CSS*/
 nav img {
-    height: 20px;
-}
-
-nav i {
-    color: #fff;
-}
-
-.menu-navbar,
-.notifications {
-    padding: 0 10%;
-}
-
-#check {
-    display: none;
-}
-
-.menu-icon {
-    height: 1em;
-    position: inherit;
-    cursor: pointer;
-    padding: 5%;
-    margin: 0 5%;
-}
-
-.menu-icon img {
-    vertical-align: 1em;
+    max-height: 30px;
 }
 
 .menu-navbar {
-    grid-area: menu-sand;
+    grid-area: menu-sd;
+    position: inherit;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 0 5%;
+}
+
+.menu-navbar a {
     position: inherit;
-}
-
-.notifications i {
-    padding: 5%;
+    height: 1.2em;
     margin: 0 5%;
-    font-size: 1.5em;
 }
 
-.menu-navbar i:hover,
-.menu-navbar ion-icon:hover {
-    background-color: #3a3a3a;
-    border-radius: 50%;
+.menu-navbar label img {
+    height: 40%;
+    margin: 0 auto;
 }
 
-.search-container {
-    grid-area: search;
+.menu-navbar a img {
+    height: 100%;
+}
+
+.menu-navbar input {
+    display: none;
 }
 
 .notifications {
     grid-area: notifications;
-    border: 1px solid red;
-    position: inherit;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.notifications figure,
+.menu-navbar label,
+.microphone-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: inherit;
+    position: relative;
+}
+
+.notifications figure img,
+.microphone-icon img {
+    margin: 0 auto;
+}
+
+.notifications figure:not(.my-account) img,
+.microphone-icon img {
+    height: 45%;
+}
+
+.my-account img {
+    border-radius: 50%;
+}
+
+.notifications figure:hover:not(.my-account),
+.menu-navbar label:hover {
+    background-color: rgb(73, 73, 73);
+    border-radius: 50%;
+}
+
+.notifications figure:nth-child(2) img {
+    height: 50%;
+}
+
+.notifications figure:nth-child(2)::after {
+    content: "9+";
+    color: #fff;
+    background-color: rgb(235, 10, 10);
+    border-radius: 50%;
+    position: absolute;
+    padding: 2px;
+    top: 0;
+    right: 0;
+    font-size: .8em;
+}
+
+.search-container {
+    width: 60%;
+}
+
+.pesquisa {
+    background-color: rgba(49, 49, 49, 0.671);
+    border: 1px solid #363636;
+    width: 90%;
+    border-radius: 60px;
+    position: relative;
+}
+
+.pesquisa label {
+    background-color: #151515;
+    border-right: 1px solid #363636;
+    width: 80%;
+    height: 45px;
+}
+
+.pesquisa figure {
+    width: 20%;
+}
+
+.pesquisa figure img {
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: relative;
+    height: 100%;
+    background-color: rgb(143, 36, 36);
+}
+
+.search-icon img {
+    height: 10%;
+    background-color: whitesmoke;
+}
+
+.microphone-icon {
+    background-color: rgba(56, 56, 56, 0.781);
+    border-radius: 50%;
+    margin: 0 20px;
 }

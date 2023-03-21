@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, CSS, GITHUB, YOUTUBE, TUTORIAL">
     <meta name="author" content="SamColt36">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <!--INÍCIO: BIBLIOTECA DE ICONS-->
     <script src="https://kit.fontawesome.com/06964a6d86.js" crossorigin="anonymous"></script>
     <!--FIM: BIBLIOTECA DE ICONS-->
@@ -25,34 +26,42 @@
             <label for="check" class="menu-icon flex-center">
                 <img src="./assets/img/nav/menu-icon.png" alt="Ícone personalizado do botão de menu" title="menu">
             </label>
+
             <input type="checkbox" name="check" id="check"></input>
-            <a href="https://www.youtube.com" title="Página inicial do Youtube">
+
+            <a href="https://www.youtube.com" title="Página inicial do Youtube" class="flex-center">
                 <img src="./assets/img/nav/youtube-loco-com-nome.png" alt="logo e tipografia do youtube">
             </a>
+
         </div>
-        <div class="search-container">
-            <form action="#">
-                <fieldset>
-                    <input type="text" name="entrada" id="entrada">
-                    <label for="entrada">
-                        <i class="fa-sharp fa-solid fa-keyboard"></i>
-                    </label>
-                </fieldset>
-                <span>
-                    <i class="fa-solid fa-microphone"></i>
-                </span>
-            </form>
+
+        <div class="search-container flex-center">
+            <div class="flex-center pesquisa">
+                <label for="entrada">
+                    <input type="text" name="entrada" id="entrada" placeholder="Pesquisar">
+                    <figure class="flex-center">
+                        <img src="./assets/img/nav/keyboard-icon.png" alt="">
+                    </figure>
+                </label>
+                <figure title="Pesquisar" class="search-icon flex-center">
+                    <img src="./assets/img/nav/search-icon.png" alt="">
+                </figure>
+            </div>
+            <figure class="microphone-icon flex-center" title="Pesquisar com sua voz">
+                <img src="./assets/img/nav/microphone-icon.png" alt="Icone de microfone">
+            </figure>
         </div>
+
         <div class="notifications">
-            <span>
-                <i class="fa-solid fa-arrow-up"></i>
-            </span>
-            <span>
-                <i class="fa-regular fa-bell"></i>
-            </span>
-            <span>
-                <img src="./assets/img/nav/logo-perfil-account.png" alt="imagem do perfil da conta de email">
-            </span>
+            <figure href="#" title="Enviar">
+                <img src="./assets/img/nav/upload-icon.png" alt="Botão de upload de arquivos">
+            </figure>
+            <figure href="#" title="Notificações">
+                <img src="./assets/img/nav/bell-icon.png" alt="Botão de notificações da conta">
+            </figure>
+            <figure class="my-account">
+                <img src="./assets/img/nav/logo-perfil-account.png" alt="Imagem do perfil da conta de email">
+            </figure>
         </div>
     </nav>
 </body>
