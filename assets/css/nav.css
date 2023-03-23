@@ -11,7 +11,6 @@ nav {
 
 nav>div {
     min-width: max-content;
-
 }
 
 .menu-navbar {
@@ -107,7 +106,7 @@ nav>div {
     width: 90%;
     height: 100%;
     background-color: rgba(255, 0, 0, 0);
-    color: #fff ;
+    color: #fff;
 }
 
 .label label input::placeholder {
