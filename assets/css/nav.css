@@ -1,143 +1,69 @@
 nav {
     width: 100vw;
-    height: 56px;
+    margin: 10px 0;
+    height: 5vh;
     position: relative;
-    display: grid;
-    grid-template-areas: 'menu-sd search notifications';
-    grid-template-columns: 1fr 6fr 1fr;
+    display: flex;
+    flex-wrap: nowrap;
     align-content: center;
     font-family: 'Roboto', sans-serif;
 }
 
+nav>div {
+    min-width: max-content;
+
+}
+
 .menu-navbar {
-    grid-area: menu-sd;
+    flex-basis: 10%;
+    justify-content: space-around;
 }
 
 .search-container {
-    grid-area: search;
+    flex-basis: 80%;
+    position: relative;
 }
 
 .notifications {
-    grid-area: notifications;
+    flex-basis: 10%;
 }
 
-nav img:not(.my-account img) {
-    max-height: 20px;
+
+.menu-navbar label,
+.notifications figure {
+    height: 5vh;
+    width: 5vh;
+    position: relative;
     cursor: pointer;
 }
 
-/*menu-navbar*/
-.menu-navbar {
-    justify-content: space-evenly;
-    width: 100%;
+.menu-navbar label:hover,
+.notifications figure:hover:not(.my-account) {
+    border-radius: 50%;
+    background-color: rgba(71, 71, 71, 0.5);
 }
 
-.menu-navbar label {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
+.menu-navbar a {
+    height: 5vh;
+    width: auto;
 }
 
 .menu-navbar label img {
-    height: 15px;
+    margin: 0 auto;
+    height: 40%;
 }
 
 .menu-navbar label:hover {
-    background-color: rgba(43, 43, 43, 1);
-}
-
-/*search-container*/
-.search-container {
-    width: 60%;
-    margin: 0 auto;
-    height: 50px;
-}
-
-.microphone-icon {
-    background-color: rgba(43, 43, 43, 0.418);
-    height: 45px;
-    width: 45px;
-    margin: 0 5px;
-    border-radius: 50%;
     cursor: pointer;
+    background-color: rgba(70, 70, 70, 0.603);
+    border-radius: 50%;
 }
 
-.microphone-icon:hover {
-    background-color: rgba(43, 43, 43, 1);
+.menu-navbar a img {
+    height: 50%;
 }
 
-.microphone-icon img {
-    margin: 0 auto;
-}
-
-.label {
-    border: 1px solid rgba(112, 112, 112, 0.534);
-    overflow: hidden;
-    width: calc(100% - 55px);
-    border-radius: 50px;
-    height: 45px;
-}
-
-.label label {
-    background-color: rgba(128, 128, 0, 0);
-    padding-left: 5%;
-    height: 100%;
-    width: calc(100% - 70px);
-}
-
-.label figure {
-    height: 50px;
-    width: 70px;
-}
-
-.label figure img {
-    margin: 0 auto;
-}
-
-.label label {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.label label input {
-    background-color: rgba(15, 155, 155, 0);
-    height: 100%;
-    width: 100%;
-    font-size: 1em;
-    color: #fff;
-}
-
-.label label input::placeholder {
-    color: #ffffff8f;
-    font-family: 'Roboto', sans-serif;
-}
-
-.label label figure {
-    width: 50px;
-}
-
-.label label figure img {
-    height: 12px;
-    opacity: .5;
-}
-
-.label label figure img:hover {
-    opacity: .8;
-    transition: ease-in .3s;
-}
-
-.search-icon {
-    background-color: rgba(58, 58, 58, 0.5);
-    border-left: 1px solid rgba(112, 112, 112, 0.534);
-}
-
-/*notifications*/
 .notifications figure {
-    width: 45px;
-    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,33 +71,87 @@ nav img:not(.my-account img) {
 }
 
 .notifications figure img:not(.my-account img) {
-    height: 50px;
-}
-
-.notifications figure:nth-child(2)::after {
-    content: "9+";
-    color: #fff;
-    background-color: rgb(238, 11, 11);
-    border-radius: 50%;
-    font-size: .8em;
-    padding: 2px;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-}
-
-.notifications figure:hover:not(.my-account) {
-    background-color: rgba(43, 43, 43, 1);
-    border-radius: 50%;
-}
-
-.my-account {
-    cursor: pointer;
-    position: inherit;
-    margin: 0 10px;
+    height: 50%;
 }
 
 .my-account img {
-    width: 100%;
     border-radius: 50%;
+    height: 5vh;
+}
+
+.label {
+    border-radius: 50px;
+    border: 1px solid rgb(68, 68, 68);
+    width: 50%;
+    height: 100%;
+    position: inherit;
+    overflow: hidden;
+}
+
+.label label {
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+    position: inherit;
+}
+
+.label figure {
+    width: 10%;
+    height: 100%;
+}
+
+.label label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.label label input::placeholder {
+    font-size: 1.1em;
+    color: rgb(136, 136, 136);
+}
+
+.label label figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 1px solid rgb(68, 68, 68);
+}
+
+.label label figure img {
+    height: 10px;
+    opacity: .7;
+}
+
+.label label figure img:hover {
+    opacity: .9;
+}
+
+.label>figure {
+    background-color: rgba(63, 63, 63, 0.5);
+    position: inherit;
+    cursor: pointer;
+
+}
+
+.label>figure img {
+    height: 50%;
+}
+
+.search-container>figure {
+    background-color: rgba(51, 51, 51, 0.63);
+    margin-left: 1%;
+    border-radius: 50%;
+    position: relative;
+    height: 5vh;
+    width: 5vh;
+    cursor: pointer;
+}
+
+.search-container>figure img {
+    height: 50%;
+
 }
