@@ -155,13 +155,13 @@ nav>div {
 }
 
 /* Mobile landscape*/
-@media only screen and (min-width: 320px) and (max-width: 425px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
     .label label input::placeholder {
         font-size: .8em;
     }
 }
 /* Mobile portrait*/
-@media only screen and (min-width: 320px) and (max-width: 425px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
     nav {
         height: 100vh;
     }
