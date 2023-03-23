@@ -1,12 +1,12 @@
 nav {
     width: 100vw;
-    margin: 10px 0;
     height: 5vh;
-    position: relative;
+    position: fixed;
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     font-family: 'Roboto', sans-serif;
+    background-color: #15151577;
 }
 
 nav>div {
@@ -83,7 +83,7 @@ nav>div {
     border-radius: 50px;
     border: 1px solid rgb(68, 68, 68);
     width: 50%;
-    height: 100%;
+    height: 5vh;
     position: inherit;
     overflow: hidden;
 }
@@ -110,7 +110,7 @@ nav>div {
 }
 
 .label label input::placeholder {
-    font-size: 1.1em;
+    font-size: 100%;
     color: rgb(136, 136, 136);
 }
 
@@ -134,7 +134,6 @@ nav>div {
     background-color: rgba(63, 63, 63, 0.5);
     position: inherit;
     cursor: pointer;
-
 }
 
 .label>figure img {
@@ -153,5 +152,57 @@ nav>div {
 
 .search-container>figure img {
     height: 50%;
+}
 
+/* Mobile landscape*/
+@media only screen and (min-width: 320px) and (max-width: 425px) and (orientation: landscape) {
+    .label label input::placeholder {
+        font-size: .8em;
+    }
+}
+/* Mobile portrait*/
+@media only screen and (min-width: 320px) and (max-width: 425px) and (orientation: portrait) {
+    nav {
+        height: 100vh;
+    }
+
+    nav>div {
+        align-self: flex-start;
+    }
+
+    .search-container {
+        align-self: flex-end;
+    }
+
+    .label {
+        width: 100%;
+    }
+
+    .label>figure img {
+        height: 50%;
+    }
+
+    .search-container>figure img {
+        height: 40%;
+    }
+
+    .label label figure img {
+        height: 7px;
+    }
+
+    .label figure {
+        width: 25%;
+    }
+
+    .label label {
+        width: 75%;
+    }
+
+    .label label input::placeholder {
+        font-size: .9em;
+    }
+
+    .search-container>figure {
+        margin-left: 3%;
+    }
 }
