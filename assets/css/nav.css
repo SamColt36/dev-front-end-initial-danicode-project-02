@@ -107,6 +107,7 @@ nav>div {
     width: 90%;
     height: 100%;
     background-color: rgba(255, 0, 0, 0);
+    color: #fff ;
 }
 
 .label label input::placeholder {
@@ -122,7 +123,7 @@ nav>div {
 }
 
 .label label figure img {
-    height: 10px;
+    height: 30%;
     opacity: .7;
 }
 
@@ -160,6 +161,7 @@ nav>div {
         font-size: .8em;
     }
 }
+
 /* Mobile portrait*/
 @media only screen and (orientation: portrait) {
     nav {
@@ -186,9 +188,6 @@ nav>div {
         height: 40%;
     }
 
-    .label label figure img {
-        height: 7px;
-    }
 
     .label figure {
         width: 25%;
@@ -196,10 +195,6 @@ nav>div {
 
     .label label {
         width: 75%;
-    }
-
-    .label label input::placeholder {
-        font-size: .9em;
     }
 
     .search-container>figure {
