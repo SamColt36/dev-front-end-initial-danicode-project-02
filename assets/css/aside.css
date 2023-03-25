@@ -1,0 +1,42 @@
+aside {
+    top: 3rem;
+    position: fixed;
+    width: var(--main-aside-width);
+    height: calc(100vh - 3rem);
+    position: relative;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin-left: calc(var(--main-aside-width) / 8);
+    border: 1px solid rgb(223, 193, 60);
+}
+
+aside figure:first-child {
+    display: none;
+}
+
+aside figure {
+    width: 100%;
+    height: 4.5rem;
+    position: inherit;
+    font-size: .7rem;
+    color: #fff;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+aside figure:hover {
+    background-color: rgba(99, 99, 99, 0.45);
+    border-radius: 20%;
+}
+
+aside figure img {
+    width: 30%;
+    margin: .3rem;
+}
+
+/* Mobile-P portrait*/
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+    aside figure:first-child {
+        display: contents;
+    }
+}

@@ -1,13 +1,14 @@
 nav {
     width: 100vw;
-    padding: .5rem 0;
     position: fixed;
-    height: 2.5rem;
+    top: 0;
+    height: 3rem;
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     font-family: 'Roboto', sans-serif;
     background-color: #15151577;
+    border: 1px solid red;
 }
 
 nav>div {
@@ -15,17 +16,17 @@ nav>div {
 }
 
 .menu-navbar {
-    flex-basis: 10%;
+    flex-basis: 15%;
     justify-content: space-around;
 }
 
 .search-container {
-    flex-basis: 80%;
+    flex-basis: 100%;
     position: relative;
 }
 
 .notifications {
-    flex-basis: 10%;
+    flex-basis: 15%;
 }
 
 .menu-navbar label,
@@ -89,7 +90,7 @@ nav>div {
 
 .label label {
     margin-left: 5%;
-    width: 90%;
+    width: calc(100% - var(--main-nav-height));
     height: 100%;
     position: inherit;
 }
@@ -118,12 +119,12 @@ nav>div {
 .label label figure {
     position: absolute;
     top: 0;
-    right: 0;
-    border-right: 1px solid rgb(68, 68, 68);
+    right: 5px;
+
 }
 
 .label label figure img {
-    height: 30%;
+    height: 25%;
     opacity: .7;
 }
 
@@ -135,7 +136,9 @@ nav>div {
     background-color: rgba(63, 63, 63, 0.5);
     position: inherit;
     cursor: pointer;
-}
+    width: var(--main-nav-height);
+    border-left: 1px solid rgb(68, 68, 68);}
+
 
 .label>figure img {
     height: 50%;
@@ -155,13 +158,18 @@ nav>div {
     height: 50%;
 }
 
-/* Mobile landscape*/
-@media only screen and (orientation: landscape) {}
+/* Mobile-P portrait*/
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+    .search-container {
+        visibility: hidden;
+    }
+}
 
 /* Mobile portrait*/
 @media only screen and (orientation: portrait) {
     nav {
         height: 100vh;
+        background-color: rgba(255, 0, 0, 0);
     }
 
     nav>div {

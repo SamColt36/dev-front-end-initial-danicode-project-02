@@ -9,7 +9,8 @@
 }
 
 :root {
-    --main-nav-height: 2rem;
+    --main-nav-height: 2.5rem;
+    --main-aside-width: 4rem;
 }
 
 body {
