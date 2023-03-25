@@ -7,7 +7,6 @@ aside {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     margin-left: calc(var(--main-aside-width) / 8);
-    border: 1px solid rgb(223, 193, 60);
 }
 
 aside figure:first-child {

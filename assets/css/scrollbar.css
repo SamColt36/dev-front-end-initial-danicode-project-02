@@ -1,0 +1,28 @@
+.scrollbar {
+    position: fixed;
+    top: 3.5rem;
+    height: 2rem;
+    justify-content: flex-start;
+    /*CALCULA O TAMANHO DO CONTAINER PARA FICAR O TAMANHO TOTAL DO VW DESCONTANDO A MARGIN QUE É CALCULADA COM BASE NO ASIDE*/
+    width: calc(100vw - calc(var(--main-aside-width) / 8 + var(--main-aside-width)));
+    margin-left: calc(var(--main-aside-width) / 8 + var(--main-aside-width));
+    overflow-x: hidden;
+}
+
+.scrollbar a {
+    display: inline-block;
+    min-width: max-content;
+    color: #fff;
+    font-size: 1rem;
+    background-color: rgba(78, 78, 78, 0.4);
+    line-height: 2rem;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.scrollbar a:first-child {
+    background-color: #fff;
+    color: rgb(78, 78, 78);
+}
