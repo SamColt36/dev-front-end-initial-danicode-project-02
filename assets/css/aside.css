@@ -5,7 +5,6 @@ aside {
     height: calc(100vh - 3rem);
     position: relative;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
     margin-left: calc(var(--main-aside-width) / 8);
 }
 
