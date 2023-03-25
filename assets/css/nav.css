@@ -1,7 +1,8 @@
 nav {
     width: 100vw;
-    height: 5vh;
+    padding: .5rem 0;
     position: fixed;
+    height: 2.5rem;
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
@@ -27,11 +28,10 @@ nav>div {
     flex-basis: 10%;
 }
 
-
 .menu-navbar label,
 .notifications figure {
-    height: 5vh;
-    width: 5vh;
+    height: var(--main-nav-height);
+    width: var(--main-nav-height);
     position: relative;
     cursor: pointer;
 }
@@ -43,7 +43,7 @@ nav>div {
 }
 
 .menu-navbar a {
-    height: 5vh;
+    height: var(--main-nav-height);
     width: auto;
 }
 
@@ -75,14 +75,14 @@ nav>div {
 
 .my-account img {
     border-radius: 50%;
-    height: 5vh;
+    height: var(--main-nav-height);
 }
 
 .label {
     border-radius: 50px;
     border: 1px solid rgb(68, 68, 68);
     width: 50%;
-    height: 5vh;
+    height: var(--main-nav-height);
     position: inherit;
     overflow: hidden;
 }
@@ -109,8 +109,9 @@ nav>div {
     color: #fff;
 }
 
-.label label input::placeholder {
-    font-size: 100%;
+#entrada::placeholder {
+    font-size: .8rem;
+    line-height: var(--main-nav-height);
     color: rgb(136, 136, 136);
 }
 
@@ -145,8 +146,8 @@ nav>div {
     margin-left: 1%;
     border-radius: 50%;
     position: relative;
-    height: 5vh;
-    width: 5vh;
+    height: var(--main-nav-height);
+    width: var(--main-nav-height);
     cursor: pointer;
 }
 
@@ -155,11 +156,7 @@ nav>div {
 }
 
 /* Mobile landscape*/
-@media only screen and (orientation: landscape) {
-    .label label input::placeholder {
-        font-size: .8em;
-    }
-}
+@media only screen and (orientation: landscape) {}
 
 /* Mobile portrait*/
 @media only screen and (orientation: portrait) {
@@ -186,7 +183,6 @@ nav>div {
     .search-container>figure img {
         height: 40%;
     }
-
 
     .label figure {
         width: 25%;
