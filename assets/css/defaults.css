@@ -6,16 +6,21 @@
     border: none;
     list-style-type: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    --main-nav-height: 2.5rem;
+    --main-nav-height: 3rem;
     --main-aside-width: 4rem;
+    --main-width-label-label: 90%;
 }
 
 body {
     background-color: #151515;
-    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: grid;
+    grid-template-areas: 'menu-icon menu-logo search notify';
+    grid-template-columns: 1fr 1fr 9fr 2fr;
 }
 
 a {

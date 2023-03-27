@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/aside.css">
     <link rel="stylesheet" href="./assets/css/scrollbar.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Youtube</title>
     <link rel="icon" type="image/png" href="https://www.youtube.com/s/desktop/00d32223/img/favicon_32x32.png"
         sizes="32x32" />
@@ -20,90 +21,52 @@
 
 <body>
     <!--NAVBAR-->
-    <nav>
-        <div class="menu-navbar flex-center">
-            <!--MENU-SANDWISH-->
-            <label for="check" class="menu-icon flex-center">
-                <img src="./assets/img/nav/menu-icon.png" alt="Ícone personalizado do botão de menu">
-            </label>
-            <!--INPUT DISPLAY NONE-->
-            <input type="checkbox" name="check" id="check" style="display: none;"></input>
-
-            <a href="https://www.youtube.com" title="Página inicial do Youtube" class="flex-center">
-                <img src="./assets/img/nav/youtube-loco-com-nome.png" alt="logo e tipografia do youtube">
-            </a>
-
-        </div>
-
-        <div class="search-container flex-center">
-            <div class="label flex-center">
-                <label for="entrada">
-                    <input type="text" name="entrada" id="entrada" placeholder="Pesquisar">
-                    <figure class="flex-center">
-                        <img src="./assets/img/nav/keyboard-icon.png" alt="">
-                    </figure>
-                </label>
-                <figure title="Pesquisar" class="search-icon flex-center">
-                    <img src="./assets/img/nav/search-icon.png" alt="">
-                </figure>
-            </div>
-            <figure class="microphone-icon flex-center" title="Pesquisar com sua voz">
-                <img src="./assets/img/nav/microphone-icon.png" alt="Icone de microfone">
-            </figure>
-        </div>
-
-        <div class="notifications flex-center">
-            <figure href="#" title="Enviar">
-                <img src="./assets/img/nav/upload-icon.png" alt="Botão de upload de arquivos">
-            </figure>
-            <figure href="#" title="Notificações">
-                <img src="./assets/img/nav/bell-icon.png" alt="Botão de notificações da conta">
-            </figure>
-            <figure class="my-account flex-center">
-                <img src="./assets/img/nav/logo-perfil-account.png" alt="Imagem do perfil da conta de email">
-            </figure>
-        </div>
-    </nav>
-    <!--MENU LATERAL RESUMIDO-->
-    <aside class="flex-center">
-        <figure class="flex-center">
-            <img src="./assets/img/nav/search-icon.png" alt="Pesquisar">
-            <figcaption>Pesquisar</figcaption>
+    <!--menu-->
+    <div class="menu-icon">
+        <figure class=" flex-center">
+            <img src="./assets/img/nav/menu-icon.png" alt="Ícone personalizado do botão de menu">
         </figure>
-        <figure class="flex-center">
-            <img src="./assets/img//aside/inicio-icon.png" alt="Link para o ínicio">
-            <figcaption>Início</figcaption>
-        </figure>
-        <figure class="flex-center">
-            <img src="./assets/img//aside/shorts-icon.png" alt="Link para Youtube Shorts">
-            <figcaption>Shorts</figcaption>
-        </figure>
-        <figure class="flex-center">
-            <img src="./assets/img/aside/inscricoes-icon.png" alt="Link para inscrições">
-            <figcaption>Inscrições</figcaption>
-        </figure>
-        <figure class="flex-center">
-            <img src="./assets/img/aside/biblioteca-icon.png" alt="Link para bibliotecas">
-            <figcaption>Bibliotecas</figcaption>
-        </figure>
-    </aside>
-    <!--LISTA COM FILTRO DE INTERESSE-->
-    <div class="scrollbar flex-center">
-        <a>Tudo</a>
-        <a>Mixes</a>
-        <a>Músicas</a>
-        <a>Eren Yeager</a>
-        <a>Piano</a>
-        <a>Banda sonora</a>
-        <a>Música brasileira</a>
-        <a>Ao vivo</a>
-        <a >Universos</a>
-        <a>Piano</a>
-        <a>Banda sonora</a>
-        <a>Música brasileira</a>
-        <a>Ao vivo</a>
-        <a>Universos</a>
     </div>
+    <!--logo+tipografia-->
+    <figure class="menu-logo flex-center">
+        <img src="./assets/img/nav/youtube-loco-com-nome.png" alt="logo e tipografia do youtube"
+            title="Página inicial do Youtube">
+    </figure>
+    <!--container-pesquisa-->
+    <div class="search-container flex-center">
+        <div class="label flex-center">
+            <label for="entrada">
+                <input type="text" name="entrada" id="entrada" placeholder="Pesquisar">
+                <figure class="flex-center">
+                    <img src="./assets/img/nav/keyboard-icon.png" alt="Chamar techado virtual">
+                </figure>
+            </label>
+            <figure title="Pesquisar" class="search-icon flex-center">
+                <img src="./assets/img/nav/search-icon.png" alt="Pesquisar">
+            </figure>
+        </div>
+        <figure class="microphone-icon flex-center" title="Pesquisar com sua voz">
+            <img src="./assets/img/nav/microphone-icon.png" alt="Icone de microfone">
+        </figure>
+    </div>
+    <!--container conta-->
+    <div class="notifications flex-center">
+        <figure title="Pesquisar" class="search-icon flex-center">
+            <img src="./assets/img/nav/search-icon.png" alt="">
+        </figure>
+        <figure href="#" title="Enviar">
+            <img src="./assets/img/nav/upload-icon.png" alt="Botão de upload de arquivos">
+        </figure>
+        <figure href="#" title="Notificações">
+            <img src="./assets/img/nav/bell-icon.png" alt="Botão de notificações da conta">
+        </figure>
+        <figure class="my-account flex-center">
+            <img src="./assets/img/nav/logo-perfil-account.png" alt="Imagem do perfil da conta de email">
+        </figure>
+    </div>
+
+
+
 </body>
 
 </html>

@@ -1,204 +1,179 @@
-nav {
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    height: 3rem;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    background-color: #15151577;
-}
-
-nav>div {
-    min-width: max-content;
-}
-
-.menu-navbar {
-    flex-basis: 15%;
-    justify-content: space-around;
-}
-
+.menu-icon,
+.menu-logo,
 .search-container {
-    flex-basis: 100%;
-    position: relative;
-}
-
-.notifications {
-    flex-basis: 15%;
-}
-
-.menu-navbar label,
-.notifications figure {
     height: var(--main-nav-height);
-    width: var(--main-nav-height);
     position: relative;
+    padding: 5px;
     cursor: pointer;
+    border: 1px solid rgb(221, 218, 33);
 }
 
-.menu-navbar label:hover,
-.notifications figure:hover:not(.my-account) {
-    border-radius: 50%;
-    background-color: rgba(71, 71, 71, 0.5);
-}
-
-.menu-navbar a {
+.menu-icon {
     height: var(--main-nav-height);
-    width: auto;
+    grid-area: menu-icon;
 }
 
-.menu-navbar label img {
+.menu-icon figure {
+    position: relative;
+    height: calc(var(--main-nav-height) - 10px);
+    width: calc(var(--main-nav-height) - 10px);
     margin: 0 auto;
+}
+
+.menu-icon figure:hover {
+    border-radius: 50%;
+    background-color: rgba(59, 59, 59, 0.541);
+}
+
+.menu-icon figure img {
     height: 40%;
 }
 
-.menu-navbar label:hover {
-    cursor: pointer;
-    background-color: rgba(70, 70, 70, 0.603);
-    border-radius: 50%;
-}
-
-.menu-navbar a img {
-    height: 50%;
-}
-
-.notifications figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*logo+tipografia*/
+.menu-logo {
+    grid-area: menu-logo;
+    width: auto;
     position: relative;
 }
 
-.notifications figure img:not(.my-account img) {
+.menu-logo img {
     height: 50%;
 }
 
-.my-account img {
-    border-radius: 50%;
-    height: var(--main-nav-height);
+/*container-pesquisa*/
+.search-container {
+    grid-area: search;
+    position: inherit;
+    width: 100%;
 }
 
 .label {
-    border-radius: 50px;
-    border: 1px solid rgb(68, 68, 68);
-    width: 50%;
-    height: var(--main-nav-height);
+    height: calc(var(--main-nav-height) - 10px);
+    width: 70%;
+    border: 1px solid rgb(95, 95, 95);
     position: inherit;
+    border-radius: 30px;
     overflow: hidden;
 }
 
 .label label {
-    margin-left: 5%;
-    width: calc(100% - var(--main-nav-height));
     height: 100%;
-    position: inherit;
-}
-
-.label figure {
-    width: 10%;
-    height: 100%;
-}
-
-.label label input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0);
-    color: #fff;
+    width: var(--main-width-label-label);
 }
 
-#entrada::placeholder {
-    font-size: .8rem;
-    line-height: var(--main-nav-height);
-    color: rgb(136, 136, 136);
+.label label input {
+    height: 100%;
+    width: 95%;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.label label input::placeholder {
+    color: rgb(148, 148, 148);
+    font-size: 1rem;
 }
 
 .label label figure {
     position: absolute;
     top: 0;
-    right: 5px;
-
+    right: 10px;
+    height: 100%;
 }
 
 .label label figure img {
-    height: 25%;
-    opacity: .7;
+    height: .7rem;
+    width: auto;
+    opacity: .75;
+    cursor: pointer;
 }
 
 .label label figure img:hover {
-    opacity: .9;
+    opacity: 1;
 }
 
 .label>figure {
-    background-color: rgba(63, 63, 63, 0.5);
-    position: inherit;
-    cursor: pointer;
-    width: var(--main-nav-height);
-    border-left: 1px solid rgb(68, 68, 68);}
-
+    background-color: rgba(92, 92, 92, 0.295);
+    position: absolute;
+    right: 0;
+    width: calc(100% - var(--main-width-label-label));
+    height: 100%;
+    border-left: 1px solid rgb(95, 95, 95);
+}
 
 .label>figure img {
-    height: 50%;
+    height: 1.3rem;
 }
 
-.search-container>figure {
-    background-color: rgba(51, 51, 51, 0.63);
-    margin-left: 1%;
+.microphone-icon {
+    background-color: rgba(97, 97, 97, 0.3);
+    height: calc(var(--main-nav-height) - 10px);
+    width: calc(var(--main-nav-height) - 10px);
+    margin-left: 1rem;
     border-radius: 50%;
-    position: relative;
-    height: var(--main-nav-height);
-    width: var(--main-nav-height);
+    position: inherit;
     cursor: pointer;
 }
 
-.search-container>figure img {
+.microphone-icon:hover {
+    background-color: rgba(97, 97, 97, 0.5);
+}
+
+.microphone-icon img {
     height: 50%;
 }
 
-/* Mobile-P portrait*/
-@media only screen and (max-width: 375px) and (orientation: portrait) {
-    .search-container {
-        visibility: hidden;
-    }
+.notifications {
+    grid-area: notify;
+    height: var(--main-nav-height);
+    position: inherit;
+    border: 1px solid yellow;
 }
 
-/* Mobile portrait*/
-@media only screen and (orientation: portrait) {
-    nav {
-        height: 100vh;
-        background-color: rgba(255, 0, 0, 0);
-    }
+.notifications figure {
+    cursor: pointer;
+}
 
-    nav>div {
-        align-self: flex-start;
-    }
+.notifications figure:not(.my-account) {
+    position: inherit;
+    height: calc(var(--main-nav-height) - 10px);
+    width: calc(var(--main-nav-height) - 10px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .search-container {
-        align-self: flex-end;
-    }
+/*ATIVAR DISPLAY QUANDO A TELA FOR MENOR*/
+.notifications figure:nth-child(1) {
+    display: none;
+}
 
-    .label {
-        width: 100%;
-    }
+.notifications figure:nth-child(2) img {
+    height: 50%;
+}
 
-    .label>figure img {
-        height: 50%;
-    }
+.notifications figure:nth-child(3) img {
+    height: 60%;
+}
 
-    .search-container>figure img {
-        height: 40%;
-    }
+.notifications figure img {
+    height: 70%;
+}
 
-    .label figure {
-        width: 25%;
-    }
+.my-account img {
+    height: calc(var(--main-nav-height) - 10px);
+    width: calc(var(--main-nav-height) - 10px);
+    border-radius: 50%;
+    height: 100%;
+}
 
-    .label label {
-        width: 75%;
-    }
 
-    .search-container>figure {
-        margin-left: 3%;
-    }
+
+.notifications img {
+    max-width: 30px;
 }
