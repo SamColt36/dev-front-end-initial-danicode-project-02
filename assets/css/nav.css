@@ -1,16 +1,17 @@
 .menu-icon,
 .menu-logo,
-.search-container {
+.search-container,
+.notifications {
     height: var(--main-nav-height);
     position: relative;
     padding: 5px;
     cursor: pointer;
-    border: 1px solid rgb(221, 218, 33);
 }
 
 .menu-icon {
     height: var(--main-nav-height);
     grid-area: menu-icon;
+
 }
 
 .menu-icon figure {
@@ -129,9 +130,6 @@
 
 .notifications {
     grid-area: notify;
-    height: var(--main-nav-height);
-    position: inherit;
-    border: 1px solid yellow;
 }
 
 .notifications figure {
@@ -170,10 +168,4 @@
     width: calc(var(--main-nav-height) - 10px);
     border-radius: 50%;
     height: 100%;
-}
-
-
-
-.notifications img {
-    max-width: 30px;
 }

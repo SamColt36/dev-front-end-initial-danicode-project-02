@@ -13,14 +13,19 @@
     --main-nav-height: 3rem;
     --main-aside-width: 4rem;
     --main-width-label-label: 90%;
+    --main-scrollbar-height: calc(var(--main-nav-height) * .6);
 }
 
 body {
     background-color: #151515;
     position: relative;
     display: grid;
-    grid-template-areas: 'menu-icon menu-logo search notify';
-    grid-template-columns: 1fr 1fr 9fr 2fr;
+    grid-template-areas: 
+    'menu-icon menu-logo search notify'
+    'aside scrollnav scrollnav .'
+    'aside main main sidebar'
+    'aside main main sidebar';
+    grid-template-columns: 1fr 1fr 10fr 2fr;
 }
 
 a {

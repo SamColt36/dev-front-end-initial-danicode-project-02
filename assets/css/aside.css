@@ -1,0 +1,48 @@
+aside {
+    grid-area: aside;
+    flex-direction: column;
+    height: calc(100vh - var(--main-nav-height));
+    position: inherit;
+    color: #fff;
+    font-size: .7rem;
+}
+
+aside figure {
+    flex-direction: column;
+    width: 80%;
+    height: 5rem;
+    position: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+aside figure:hover {
+    background-color: rgba(48, 48, 48, 0.603);
+}
+aside figure:first-child {
+    display: none;
+}
+aside figure img {
+    height: 25%;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*APAGAR*/
+span {
+    grid-area: span;
+}
+
+aside img {
+    height: 10px;
+}

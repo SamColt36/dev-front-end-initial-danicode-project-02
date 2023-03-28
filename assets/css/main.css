@@ -1,0 +1,5 @@
+main {
+    grid-area: main;
+    background-color: lightslategray;
+    height: calc(100vh - var(--main-nav-height) - var(--main-nav-height) );
+}

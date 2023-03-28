@@ -1,0 +1,26 @@
+.scrollbar {
+    grid-area: scrollnav;
+    height: var(--main-nav-height);
+    position: inherit;
+    justify-content: flex-start;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, #000, rgba(255, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to right, #000000 90%, rgba(255, 255, 255, 0.1));
+}
+
+.scrollbar a:first-child {
+    background-color: #fff;
+    color: #151515;
+}
+
+.scrollbar a {
+    color: #fff;
+    min-width: max-content;
+    background-color: rgba(90, 90, 90, 0.425);
+    height: calc(var(--main-scrollbar-height) + 10px);
+    line-height: var(--main-scrollbar-height);
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

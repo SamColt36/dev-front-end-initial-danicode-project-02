@@ -1,0 +1,24 @@
+.sidebar {
+    grid-area: sidebar;
+    width: 100%;
+    height: calc(100vh - var(--main-nav-height) - var(--main-nav-height));
+    overflow-y: hidden;
+    border: 1px solid rgb(95, 95, 95);
+}
+
+.anuncio {
+    position: relative;
+    width: inherit;
+    height: calc(100vh - var(--main-nav-height));
+    overflow: auto;
+}
+
+.anuncio figure,
+.anuncio figure a {
+    position: inherit;
+    width: inherit;
+}
+
+.anuncio figure a img {
+    width: inherit;
+}
