@@ -20,11 +20,11 @@ body {
     background-color: #151515;
     position: relative;
     display: grid;
-    grid-template-areas: 
-    'menu-icon menu-logo search notify'
-    'aside scrollnav scrollnav .'
-    'aside main main sidebar'
-    'aside main main sidebar';
+    grid-template-areas:
+        'menu-icon menu-logo search notify'
+        'aside scrollnav scrollnav .'
+        'aside main main sidebar'
+        'aside main main sidebar';
     grid-template-columns: 1fr 1fr 10fr 2fr;
 }
 
@@ -36,4 +36,21 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 319px) {
+    body {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+    body {
+        grid-template-areas:
+            'menu-icon menu-logo notify notify'
+            '. scrollnav scrollnav .'
+            '. main main sidebar'
+            'aside aside aside aside';
+        grid-template-columns: 1fr 1fr 10fr 2fr;
+    }
 }

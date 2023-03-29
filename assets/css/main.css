@@ -1,5 +1,12 @@
 main {
     grid-area: main;
     background-color: lightslategray;
-    height: calc(100vh - var(--main-nav-height) - var(--main-nav-height) );
+    height: calc(100vh - 2 * var(--main-nav-height));
+    overflow-y: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+    main {
+        height: calc(100vh - 3 *var(--main-nav-height));
+    }
 }
