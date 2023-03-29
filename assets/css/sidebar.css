@@ -23,7 +23,7 @@
 .anuncio figure a img {
     width: inherit;
 }
-
+/* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 475px) {
     .sidebar {
         height: calc(100vh - 3 * var(--main-nav-height));

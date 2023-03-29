@@ -29,10 +29,11 @@ aside figure img {
     margin: 5px 0;
 }
 
+/* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 475px) {
     aside {
         flex-direction: row;
-        height: 3rem;
+        height: var(--main-nav-height);
     }
 
     aside figure {
